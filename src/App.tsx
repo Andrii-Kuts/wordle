@@ -1,9 +1,12 @@
-function App() {
+import Keyboard from "./Keyboard"
+import LetterGrid from "./LetterGrid"
+
+const App: React.FC = () => {
   return (
     <>
-      <div>
-        Vite + React
-      </div>
+      <h1>Wordle</h1>
+      <LetterGrid />
+      <Keyboard />
     </>
   )
 }
