@@ -1,0 +1,29 @@
+.grid {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.grid_row {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.cell_empty {
+  outline: 2px solid var(--gray);
+}

@@ -1,4 +1,60 @@
+:root {
+  --green: #1f8430;
+  --yellow: #9b9323;
+  --gray: #5d5d5d;
+  --dark-gray: #313131;
+  --black: #1c1c1c;
+  --white: #e2e2e2;
+}
+
 body {
-  background-color: black;
-  color: white
+  background-color: var(--black);
+  color: var(--white);
+  font-family: 'Arial';
+  font-weight: 600;
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+}
+
+.app {
+  display: flex;
+  flex-flow: column;
+  gap: 40px;
+}
+
+.button {
+  cursor: pointer;
+
+  appearance: none;
+  background: none;
+  border: none;
+
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  text-align: center;
+}
+
+.button_start {
+  align-self: center;
+  padding: 20px 40px;
+  border-radius: 8px;
+  font-size: 30px;
+  background-color: var(--black);
+  border: 2px solid var(--gray);
+
+  transition:
+    background-color 0.15s ease,
+    filter 0.15s ease;
+}
+
+.button_start:hover {
+  filter: brightness(1.2);
+}
+
+.button_start:active {
+  background-color: var(--gray);
 }

@@ -1,0 +1,72 @@
+.keyboard {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.row {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.key {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  appearance: none;
+  background: none;
+  border: none;
+
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  text-align: center;
+
+  background-color: var(--black);
+  border: 2px solid var(--dark-gray);
+
+  height: 60px;
+  border-radius: 2px;
+
+  transition: filter 0.15s ease;
+}
+
+.key:hover {
+  filter: brightness(1.1);
+}
+
+.key:active {
+  filter: brightness(1.3);
+}
+
+.key_letter {
+  width: 40px;
+  font-size: 20px;
+}
+
+.key_letter_empty {
+  background-color: var(--black);
+}
+
+.key_letter_nonempty {
+  border: none;
+}
+
+.key_letter_nonempty:hover {
+  filter: brightness(0.9);
+}
+
+.key_letter_nonempty:active {
+  filter: brightness(0.7);
+}
+
+.key_special {
+  font-size: 18px;
+  padding: 10px;
+}
