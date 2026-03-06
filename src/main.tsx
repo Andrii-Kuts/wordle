@@ -3,12 +3,15 @@ import { createRoot } from 'react-dom/client';
 
 import './global.css';
 import App from './App.tsx';
+import { BrowserRouter } from 'react-router';
 
 const root = document.getElementById('root');
 if (!root) throw new Error('Cannot find root');
 
 createRoot(root).render(
   <StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </StrictMode>,
 );
